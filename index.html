@@ -12,12 +12,8 @@
     <p>London</p>
     <p id="demo"></p>
     <script>
-      const myNode = document.querySelectorAll("p");
-      function myFunction() {
-        for (let i = 0; i < myNode.length; i++) {
-          myNode[i].style.color = "red";
-        }
-      }
+      document.getElementById("demo").innerHTML =
+        window.innerWidth + "px <br>" + window.innerHeight + "px";
     </script>
   </body>
 </html>
