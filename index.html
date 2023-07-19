@@ -6,13 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 style="color: green">Greetings</h1>
+    <h1>JavaScript NodeList</h1>
     <p>Hello</p>
-    <ul>
-      <li>apple</li>
-    </ul>
+    <p>Norway</p>
+    <p>London</p>
+    <p id="demo"></p>
     <script>
-      console.log("hello world!");
+      const myNode = document.querySelectorAll("p");
+      function myFunction() {
+        for (let i = 0; i < myNode.length; i++) {
+          myNode[i].style.color = "red";
+        }
+      }
     </script>
   </body>
 </html>
